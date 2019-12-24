@@ -1,13 +1,15 @@
 import React from 'react';
-import {Landing} from "./components/Landing";
 import {Navbar} from "./components/Navbar";
+import {Landing} from "./components/Landing";
+import {Projects} from "./components/Projects";
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <Landing />
       <Navbar />
+      <Landing />
+      <Projects />
     </div>
   );
 }
