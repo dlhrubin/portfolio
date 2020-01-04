@@ -1,19 +1,22 @@
 import React, {Component} from "react";
+import projects from "../data.js";
 
 export class Projects extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            projects: [{name: "Album Collage"},
-                       {name: "Momentum Clone"}, 
-                       {name: "Web Template"}]
-        }
-    }
-
     render() {
-        let projectCards = this.state.projects.map((proj, i) => {
+        let projectCards = projects.map((proj, i) => {
             return (
-                <div key={i} className="card"></div>
+                <div key={i} className="card">
+                    <a href={proj.live} target="_blank"><img src={proj.screencap} alt={proj.name}/></a>
+                    <div className="info">
+                        <h2>{proj.name}</h2>
+                        <div className="details">
+                            <p>{proj.summary}</p>
+                            <span className="stack">STACK: </span><span className="tech">{proj.stack}</span>
+                            <br></br>
+                            <span className="links"><a href={proj.live} target="_blank">LIVE</a> | <a href={proj.code} target="_blank">CODE</a></span>
+                        </div>
+                    </div>
+                </div>
             )
         })
         return(

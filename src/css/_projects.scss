@@ -1,17 +1,68 @@
 .projects {
     width: 100%;
-    background-color: gray;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 0px;
-    div {
-        width: 80vw;
-        height: 200px;
-        background-color: lightgray;
+    padding: 40px 0px;
+    border: 5px solid $highlight;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    background-color: #868686;
+    .card {
+        height: 290px;
+        background-color: $highlight;
         border-radius: 5px;
-        margin: 10px 10px;
-
+        margin: 25px 10px;
+        box-shadow: -6px -6px $dark-accent;
+        border: 2px solid $highlight;
+        display: flex;
+        justify-content: stretch;
+    }
+    img {
+        height: 100%;
+        border-right: 5px groove $light-accent;
+        border-radius: 3px 30px 30px 3px
+    }
+    .info {
+        background-color: white;
+        flex: 1 1 auto;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    h2 {
+        color: $light-accent;
+        text-align: center;
+        font-size: 1.7em;
+        border-radius: 5px 5px 0px 0px;
+        margin: 0px;
+        padding: 3px 0px;
+        background-color: #e2e2e2;
+        border-bottom: 5px groove $light-accent;
+    }
+    .details {
+        padding: 0px 10px;
+    }
+    p, .stack {
+        color: $dark-accent;
+    }
+    span {
+        font-weight: bold;
+    }
+    .tech {
+        color: $light-accent;
+    }
+    .links {
+        color: $dark-accent;
+        display: block;
+        margin-top: 5px;
+    }
+    a {
+        color: $light-accent;
+    }
+    a:hover {
+        color: $highlight;
     }
 }

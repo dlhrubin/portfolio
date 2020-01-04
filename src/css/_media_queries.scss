@@ -11,7 +11,7 @@
     .navbar {
         width: 400px;
     }
-    .intro {
+    .card {
         width: 90vw;
     }
 }
@@ -26,9 +26,12 @@
 }
 
 @media only screen and (min-width: 800px) {
-    .intro {
-        width: auto;
-    }    
+    .card {
+        width: 800px;
+    } 
+    .projects .card {
+        width: 980px
+    }   
     body {
         font-size: 0.95em;
     }
