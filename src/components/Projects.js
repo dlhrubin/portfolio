@@ -6,7 +6,9 @@ export class Projects extends Component {
         let projectCards = projects.map((proj, i) => {
             return (
                 <div key={i} className="card">
-                    <a href={proj.live} target="_blank"><img src={proj.screencap} alt={proj.name}/></a>
+                    <div className="image-container">
+                        <a href={proj.live} target="_blank"><img src={proj.screencap} alt={proj.name}/></a>
+                    </div>
                     <div className="info">
                         <h2>{proj.name}</h2>
                         <div className="details">

@@ -2,35 +2,42 @@
     width: 100%;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 4vw;
     border: 5px solid $highlight;
     border-left: none;
     border-right: none;
     box-sizing: border-box;
-    background-color: #868686;
+    background-color: #871c3a;
     .card {
-        height: 290px;
+        width: 100%;
+        box-sizing: border-box;
         background-color: $highlight;
         border-radius: 5px;
         margin: 25px 10px;
         box-shadow: -6px -6px $dark-accent;
         border: 2px solid $highlight;
         display: flex;
+        flex-direction: column;
         justify-content: stretch;
     }
+    .image-container {
+        width: 100%;
+    }
     img {
-        height: 100%;
-        border-right: 5px groove $light-accent;
-        border-radius: 3px 30px 30px 3px
+        height: auto;
+        width: 100%;
+        border-bottom: 5px groove $light-accent;
+        border-radius: 3px 3px 30px 30px;
     }
     .info {
         background-color: white;
         flex: 1 1 auto;
         margin: 10px;
         border-radius: 5px;
+        padding: 0 0 10px 0;
     }
     h2 {
         color: $light-accent;

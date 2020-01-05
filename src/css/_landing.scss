@@ -26,6 +26,8 @@
     padding: 0 20px;
     border: 2px solid $dark-accent;
     box-shadow: 6px 6px $highlight;
+    box-sizing: border-box;
+    width: 80vw;
     p {
         color: $light-accent;
         font-size: 3em;

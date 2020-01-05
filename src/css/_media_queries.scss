@@ -11,8 +11,14 @@
     .navbar {
         width: 400px;
     }
-    .card {
+    .intro {
         width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .projects .card {
+        width: 40vw;
     }
 }
 
@@ -26,12 +32,9 @@
 }
 
 @media only screen and (min-width: 800px) {
-    .card {
+    .intro {
         width: 800px;
-    } 
-    .projects .card {
-        width: 980px
-    }   
+    }  
     body {
         font-size: 0.95em;
     }
@@ -55,4 +58,38 @@
         box-shadow: -6px 6px $highlight;
         flex-direction: column;
     }
+    .projects {
+        padding: 40px 10vw;
+        .card {
+            width: 35vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1210px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px;
+        .card {
+            min-width: 78vw;
+            max-width: 980px;
+            height: 290px;
+            flex-direction: row;
+        }
+        .image-container {
+            height: 100%;
+        }
+        img {
+            width: auto;
+            height: 100%;
+            border-bottom: none;
+            border-right: 5px groove $light-accent;
+            border-radius: 3px 30px 30px 3px;
+        }
+        .info {
+            padding: 0;
+        }
+    }  
 }
