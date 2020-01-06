@@ -1,5 +1,6 @@
 $base: #ffffff;
 $light-accent: #d1274b;
+$background: #871c3a;
 $dark-accent: #3d0e1e;
 $highlight: #f88020;
 
@@ -9,3 +10,9 @@ body {
     font-size: 0.65em;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

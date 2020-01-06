@@ -18,10 +18,6 @@
     button {
         font-size: 4em;
         color: $light-accent;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
     }
     button:hover, button:focus {
         color: $highlight;

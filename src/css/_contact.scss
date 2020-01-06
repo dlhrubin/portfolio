@@ -1,0 +1,44 @@
+.contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("../img/marble.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > div {
+        box-shadow: 6px 6px $highlight;
+        border-radius: 5px;
+        width: 85vw;
+    }
+    h2 {
+        background-color: $base;
+        margin: 0;
+        font-size: 3.5em;
+        border-radius: 5px 5px 0 0 ;
+        padding: 10px 20px;
+        border: 2px solid $background;
+        border-bottom: 8px groove $highlight;
+        box-sizing: border-box;
+        color: $light-accent;
+        text-align: center;
+    }
+    .contact-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $background;
+        border-radius: 0 0 5px 5px;
+        padding: 10px 0;
+    }
+    a {
+        font-size: 5.8em;
+        color: $base;
+        cursor: pointer;
+    }
+    a:hover {
+        color: $highlight;
+    }
+}
