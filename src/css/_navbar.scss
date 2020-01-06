@@ -1,18 +1,20 @@
 .navbar {
+    background-color: $dark-accent;
     position: fixed;
     margin: auto;
-    top: 0;
-    bottom: 0;
+    top: -5px;
+    left: 0;
     right: 0;
-    height: 60vh;
-    width: 100px;
-    border-radius: 5px 0px 0px 5px;
-    background-color: $dark-accent;
-    box-shadow: -6px 6px $highlight;
+    width: 80vw;
+    height: 75px;
+    padding: 5px 0px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 6px 6px $highlight;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1;
     button {
         font-size: 4em;
         color: $light-accent;

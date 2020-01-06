@@ -1,0 +1,75 @@
+.projects {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 4vw;
+    border: 5px solid $highlight;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    background-color: #871c3a;
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $highlight;
+        border-radius: 5px;
+        margin: 25px 10px;
+        box-shadow: -6px -6px $dark-accent;
+        border: 2px solid $highlight;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .image-container {
+        width: 100%;
+    }
+    img {
+        height: auto;
+        width: 100%;
+        border-bottom: 5px groove $light-accent;
+        border-radius: 3px 3px 30px 30px;
+    }
+    .info {
+        background-color: white;
+        flex: 1 1 auto;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 0 0 10px 0;
+    }
+    h2 {
+        color: $light-accent;
+        text-align: center;
+        font-size: 1.7em;
+        border-radius: 5px 5px 0px 0px;
+        margin: 0px;
+        padding: 3px 0px;
+        background-color: #e2e2e2;
+        border-bottom: 5px groove $light-accent;
+    }
+    .details {
+        padding: 0px 10px;
+    }
+    p, .stack {
+        color: $dark-accent;
+    }
+    span {
+        font-weight: bold;
+    }
+    .tech {
+        color: $light-accent;
+    }
+    .links {
+        color: $dark-accent;
+        display: block;
+        margin-top: 5px;
+    }
+    a {
+        color: $light-accent;
+    }
+    a:hover {
+        color: $highlight;
+    }
+}

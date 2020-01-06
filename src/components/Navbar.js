@@ -7,7 +7,7 @@ export class Navbar extends Component {
 
     render() {
         return(
-            <div className="navbar">
+            <nav className="navbar">
                 <button>
                     <i className="fas fa-user-circle"></i>
                 </button>
@@ -17,7 +17,7 @@ export class Navbar extends Component {
                 <button>
                     <i className="far fa-envelope"></i>
                 </button>
-            </div>
+            </nav>
         )
     }
 }

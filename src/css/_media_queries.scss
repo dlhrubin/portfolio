@@ -1,0 +1,95 @@
+@media only screen and (min-width: 375px) {
+    body {
+        font-size: 0.75em;
+    }
+    .navbar {
+        height: 80px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .navbar {
+        width: 400px;
+    }
+    .intro {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .projects .card {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 735px) {
+    body {
+        font-size: 0.8em;
+    }
+    .navbar {
+        height: 85px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .intro {
+        width: 800px;
+    }  
+    body {
+        font-size: 0.95em;
+    }
+    .navbar {
+        height: 90px;
+    }
+}
+
+@media only screen and (min-width: 1062px) {
+    body {
+        font-size: 1em;
+    }
+    .navbar {
+        top: 0;
+        bottom: 0;
+        right: -5px;
+        left: auto;
+        height: 60vh;
+        width: 100px;
+        padding: 0px 5px 0px 0px;
+        box-shadow: -6px 6px $highlight;
+        flex-direction: column;
+    }
+    .projects {
+        padding: 40px 10vw;
+        .card {
+            width: 35vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1210px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px;
+        .card {
+            min-width: 78vw;
+            max-width: 980px;
+            height: 290px;
+            flex-direction: row;
+        }
+        .image-container {
+            height: 100%;
+        }
+        img {
+            width: auto;
+            height: 100%;
+            border-bottom: none;
+            border-right: 5px groove $light-accent;
+            border-radius: 3px 30px 30px 3px;
+        }
+        .info {
+            padding: 0;
+        }
+    }  
+}
