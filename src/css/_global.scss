@@ -18,3 +18,7 @@ button {
     outline: none;
     cursor: pointer;
 }
+
+button, a {
+    transition: 0.15s;
+}

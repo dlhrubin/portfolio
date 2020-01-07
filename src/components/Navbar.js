@@ -4,15 +4,15 @@ export class Navbar extends Component {
     render() {
         return(
             <nav className="navbar">
-                <button>
+                <a href="#landing">
                     <i className="fas fa-user-circle"></i>
-                </button>
-                <button>
+                </a>
+                <a href="#projects">
                     <i className="fas fa-code"></i>
-                </button>
-                <button>
+                </a>
+                <a href="#contact">
                     <i className="far fa-envelope"></i>
-                </button>
+                </a>
             </nav>
         )
     }

@@ -8,7 +8,7 @@ export class Projects extends Component {
             return (
                 <div key={i} className="card">
                     <div className="image-container">
-                        <a href={proj.live} target="_blank"><img src={proj.screencap} alt={proj.name}/></a>
+                        <a href={proj.live} target="_blank" rel="noopener noreferrer"><img src={proj.screencap} alt={proj.name}/></a>
                     </div>
                     <div className="info">
                         <h2>{proj.name}</h2>
@@ -18,9 +18,9 @@ export class Projects extends Component {
                                 {stack}
                                 <br></br>
                                 <div className="links">
-                                    <a className="live-link" href={proj.live} target="_blank">Live
+                                    <a className="live-link" href={proj.live} target="_blank" rel="noopener noreferrer">Live
                                         <i className="fas fa-desktop"></i>                                    </a>
-                                    <a className="code-link" href={proj.code} target="_blank">Code
+                                    <a className="code-link" href={proj.code} target="_blank" rel="noopener noreferrer">Code
                                         <i className="fas fa-code"></i>
                                     </a>
                                 </div>
@@ -31,7 +31,7 @@ export class Projects extends Component {
             )
         })
         return(
-            <section className="projects">
+            <section id="projects">
                 {projectCards}
             </section>
         )
