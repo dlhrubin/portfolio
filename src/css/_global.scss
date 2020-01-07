@@ -12,13 +12,7 @@ body {
     font-size: 0.65em;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    outline: none;
+a {
     cursor: pointer;
-}
-
-button, a {
     transition: 0.15s;
 }

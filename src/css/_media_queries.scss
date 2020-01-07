@@ -62,7 +62,12 @@
         width: 100px;
         padding: 0px 5px 0px 0px;
         box-shadow: -6px 6px $highlight;
-        flex-direction: column;
+        ul {
+            flex-direction: column;
+        }
+        li {
+            width: 80%;
+        }
     }
     #projects {
         padding: 40px 10vw;
