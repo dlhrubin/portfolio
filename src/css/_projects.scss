@@ -1,6 +1,6 @@
-.projects {
+#projects {
     width: 100%;
-    background-color: white;
+    background-color: $base;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -10,7 +10,7 @@
     border-left: none;
     border-right: none;
     box-sizing: border-box;
-    background-color: #871c3a;
+    background-color: $background;
     .card {
         width: 100%;
         box-sizing: border-box;
@@ -33,24 +33,33 @@
         border-radius: 3px 3px 30px 30px;
     }
     .info {
-        background-color: white;
+        background-color: $base;
         flex: 1 1 auto;
         margin: 10px;
         border-radius: 5px;
-        padding: 0 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h2 {
         color: $light-accent;
         text-align: center;
-        font-size: 1.7em;
+        font-size: 27px;
         border-radius: 5px 5px 0px 0px;
         margin: 0px;
-        padding: 3px 0px;
-        background-color: #e2e2e2;
-        border-bottom: 5px groove $light-accent;
+        padding: 10px 0px 5px 0px;
+        border-bottom: 5px dashed $darker-base;
+        width: 78%;    
     }
     .details {
-        padding: 0px 10px;
+        padding: 0px 20px 20px 20px;
+        line-height: 25px;
+        font-size: 16px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
     }
     p, .stack {
         color: $dark-accent;
@@ -60,16 +69,47 @@
     }
     .tech {
         color: $light-accent;
-    }
-    .links {
-        color: $dark-accent;
-        display: block;
-        margin-top: 5px;
-    }
-    a {
-        color: $light-accent;
-    }
-    a:hover {
-        color: $highlight;
+        font-size: 0.9em;
+        border: 1.5px solid $darker-base;
+        margin-right: 8px;
+        padding: 3px 5px;
+        border-radius: 5px;
     }
 }
+
+.links {
+    color: $dark-accent;
+    display: block;
+    margin-top: 17px;
+    font-size: 1.2em;
+    a {
+        color: $light-accent;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: $base;
+    }
+    a:hover {
+        background-color: $highlight;
+    }
+
+    .live-link {
+        background-color: $tertiary;
+        i {
+            margin-left: 8px;
+        }
+    }
+    .code-link {
+        background-color: $darker-base;
+        color: $tertiary;
+        margin-left: 10px;
+        i {
+            margin-left: 5px;
+        }
+    }
+    .code-link:hover {
+        color: $base;
+    }
+}
+

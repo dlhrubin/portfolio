@@ -1,22 +1,27 @@
 import React, {Component} from "react";
+import {Link} from "react-scroll";
 
 export class Navbar extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return(
             <nav className="navbar">
-                <button>
-                    <i className="fas fa-user-circle"></i>
-                </button>
-                <button>
-                    <i className="fas fa-code"></i>
-                </button>
-                <button>
-                    <i className="far fa-envelope"></i>
-                </button>
+                <ul>
+                    <li>
+                        <Link activeClass="active" to="landing" spy={true} smooth={true}>
+                            <i className="fas fa-user-circle"></i>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true}>
+                            <i className="fas fa-code"></i>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true}>
+                            <i className="far fa-envelope"></i>
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         )
     }
