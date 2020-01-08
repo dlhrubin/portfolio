@@ -11,7 +11,7 @@ export class Projects extends Component {
                         <a href={proj.live} target="_blank" rel="noopener noreferrer"><img src={proj.screencap} alt={proj.name}/></a>
                     </div>
                     <div className="info">
-                        <h2>{proj.name}</h2>
+                        <h3>{proj.name}</h3>
                         <div className="details">
                             <p>{proj.summary}</p>
                             <div>
@@ -33,7 +33,10 @@ export class Projects extends Component {
         })
         return(
             <section id="projects">
-                {projectCards}
+                <h2>Projects</h2>
+                <div>
+                    {projectCards}
+                </div>
             </section>
         )
     }

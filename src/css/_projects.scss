@@ -1,16 +1,27 @@
 #projects {
     width: 100%;
     background-color: $base;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 40px 4vw;
+    padding: 25px 4vw;
     border: 5px solid $highlight;
     border-left: none;
     border-right: none;
     box-sizing: border-box;
     background-color: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 2.5em;
+        margin: 0 0 10px 0;
+        color: $base;
+        border-bottom: 5px groove $highlight;
+    }
+    > div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .card {
         width: 100%;
         box-sizing: border-box;
@@ -41,7 +52,7 @@
         flex-direction: column;
         align-items: center;
     }
-    h2 {
+    h3 {
         color: $light-accent;
         text-align: center;
         font-size: 27px;
@@ -50,6 +61,9 @@
         padding: 10px 0px 5px 0px;
         border-bottom: 5px dashed $darker-base;
         width: 78%;    
+    }
+    p {
+        margin: 10px 0;
     }
     p, .stack {
         color: $dark-accent;
