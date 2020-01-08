@@ -51,27 +51,32 @@
         border-bottom: 5px dashed $darker-base;
         width: 78%;    
     }
-    .details {
-        padding: 0px 20px 20px 20px;
-        line-height: 25px;
-        font-size: 16px;
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
     p, .stack {
         color: $dark-accent;
     }
     span {
         font-weight: bold;
     }
-    .tech {
+}
+
+.details {
+    padding: 0px 20px 20px 20px;
+    line-height: 25px;
+    font-size: 16px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    span {
         color: $light-accent;
         font-size: 0.9em;
         border: 1.5px solid $darker-base;
-        margin-right: 8px;
+        margin: 0 8px 8px 0;
         padding: 3px 5px;
         border-radius: 5px;
     }
@@ -80,12 +85,12 @@
 .links {
     color: $dark-accent;
     display: block;
-    margin-top: 17px;
+    margin-top: 9px;
     font-size: 1.2em;
     a {
         color: $light-accent;
         text-decoration: none;
-        padding: 5px 15px;
+        padding: 5px 14px;
         border-radius: 5px;
         font-weight: bold;
         color: $base;

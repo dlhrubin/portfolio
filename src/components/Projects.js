@@ -4,7 +4,7 @@ import projects from "../data.js";
 export class Projects extends Component {
     render() {
         let projectCards = projects.map((proj, i) => {
-            let stack = proj.stack.map(word => <span className="tech" key={word}>{word}</span>)
+            let stack = proj.stack.map(word => <span key={word}>{word}</span>)
             return (
                 <div key={i} className="card">
                     <div className="image-container">
@@ -15,8 +15,9 @@ export class Projects extends Component {
                         <div className="details">
                             <p>{proj.summary}</p>
                             <div>
-                                {stack}
-                                <br></br>
+                                <div className="tech">
+                                    {stack}
+                                </div>
                                 <div className="links">
                                     <a className="live-link" href={proj.live} target="_blank" rel="noopener noreferrer">Live
                                         <i className="fas fa-desktop"></i>                                    </a>

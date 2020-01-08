@@ -7,6 +7,12 @@
     }
 }
 
+@media only screen and (min-width: 425px) {
+    .intro div {
+        font-size: 1.5em;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     .navbar {
         width: 400px;
