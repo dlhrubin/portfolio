@@ -33,7 +33,7 @@ const projects = [
         screencap: img4,
         summary: "My personal website and portfolio was built with React. It includes my basic information, contact links, and project links and descriptions on dynamically populated content cards.",
         stack: ["React", "JavaScript", "HTML", "Sass"],
-        live: "https://github.com/dlhrubin/portfolio",
+        live: "https://dlhrubin.com",
         code: "https://github.com/dlhrubin/portfolio"
     }
 ]
