@@ -1,0 +1,137 @@
+#projects {
+    width: 100%;
+    background-color: $base;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 5px solid $highlight;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 2.5em;
+        margin: 0 0 10px 0;
+        color: $base;
+        border-bottom: 5px groove $highlight;
+    }
+    > div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+    img {
+        height: auto;
+        width: 100%;
+        border-bottom: 5px groove $light-accent;
+        border-radius: 3px 3px 30px 30px;
+    }
+    .info {
+        background-color: $base;
+        flex: 1 1 auto;
+        margin: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h3 {
+        color: $light-accent;
+        text-align: center;
+        font-size: 27px;
+        border-radius: 5px 5px 0px 0px;
+        margin: 0px;
+        padding: 10px 0px 5px 0px;
+        border-bottom: 5px dashed $darker-base;
+        width: 78%;    
+    }
+    p {
+        margin: 10px 0;
+    }
+    p, .stack {
+        color: $dark-accent;
+    }
+    span {
+        font-weight: bold;
+    }
+}
+
+.details {
+    padding: 0px 20px 20px 20px;
+    line-height: 25px;
+    font-size: 16px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    width: 90vw;
+    box-sizing: border-box;
+    background-color: $highlight;
+    border-radius: 5px;
+    margin: 25px 10px;
+    box-shadow: -6px -6px $dark-accent;
+    border: 2px solid $highlight;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+        color: $light-accent;
+        font-size: 0.9em;
+        border: 1.5px solid $darker-base;
+        margin: 0 8px 8px 0;
+        padding: 3px 5px;
+        border-radius: 5px;
+    }
+}
+
+.links {
+    color: $dark-accent;
+    display: block;
+    margin-top: 9px;
+    font-size: 1.2em;
+    a {
+        color: $light-accent;
+        text-decoration: none;
+        padding: 5px 14px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: $base;
+    }
+    a:hover {
+        background-color: $highlight;
+    }
+
+    .live-link {
+        background-color: $tertiary;
+        i {
+            margin-left: 8px;
+        }
+    }
+    .code-link {
+        background-color: $darker-base;
+        color: $tertiary;
+        margin-left: 10px;
+        i {
+            margin-left: 5px;
+        }
+    }
+    .code-link:hover {
+        color: $base;
+    }
+}
+
