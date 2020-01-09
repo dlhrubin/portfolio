@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ed23fb15.chunk.css",
+    "main.js": "/portfolio/static/js/main.de56f302.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.de56f302.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.680679b4.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.680679b4.js.map",
+    "static/js/2.0624ab1b.chunk.js": "/portfolio/static/js/2.0624ab1b.chunk.js",
+    "static/js/2.0624ab1b.chunk.js.map": "/portfolio/static/js/2.0624ab1b.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.69d7f210ba0831d3fe561cde60680762.js": "/portfolio/precache-manifest.69d7f210ba0831d3fe561cde60680762.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.ed23fb15.chunk.css.map": "/portfolio/static/css/main.ed23fb15.chunk.css.map",
+    "static/js/2.0624ab1b.chunk.js.LICENSE": "/portfolio/static/js/2.0624ab1b.chunk.js.LICENSE",
+    "static/media/album_collage_screencap.PNG": "/portfolio/static/media/album_collage_screencap.e8e79906.PNG",
+    "static/media/App.scss": "/portfolio/static/media/marble.5e6ee035.jpg",
+    "static/media/momentum_clone_screencap.PNG": "/portfolio/static/media/momentum_clone_screencap.f5ee7efa.PNG",
+    "static/media/portfolio_screencap.PNG": "/portfolio/static/media/portfolio_screencap.9cb6803a.PNG",
+    "static/media/web_template_screencap.PNG": "/portfolio/static/media/web_template_screencap.2ff0d861.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.680679b4.js",
+    "static/js/2.0624ab1b.chunk.js",
+    "static/css/main.ed23fb15.chunk.css",
+    "static/js/main.de56f302.chunk.js"
+  ]
+}
