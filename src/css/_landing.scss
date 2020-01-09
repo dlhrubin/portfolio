@@ -5,13 +5,7 @@
     justify-content: center;
     align-items: center;
     background: url("../img/marble.jpg") no-repeat center center fixed;
-	background-size: cover;
-    i {
-        position: absolute;
-        bottom: 20px;
-        font-size: 4em;
-        color: $light-accent;
-    }
+    background-size: cover;
 }    
 
 .intro {
@@ -20,7 +14,7 @@
     justify-content: center;
     background-color: $base;
     border-radius: 5px;
-    padding: 0 20px;
+    padding: 20px;
     border: 2px solid $dark-accent;
     box-shadow: 6px 6px $highlight;
     box-sizing: border-box;
@@ -30,7 +24,6 @@
         font-size: 3em;
         font-weight: bold;
         margin: 0;
-        margin-top: 20px;
         text-align: center;
     }
     div {
@@ -39,9 +32,17 @@
         font-weight: bold;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     }
 }
 
-.dot {
-    font-size: 2em;
+.fa-square-full {
+    font-size: 0.28em;
+}
+
+.fa-angle-double-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 4em;
+    color: $light-accent;
 }
