@@ -7,11 +7,13 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
-      <Landing />
-      <Projects />
-      <Contact />
+      <div className="content">
+        <Landing />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }
