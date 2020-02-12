@@ -24,13 +24,12 @@
         font-size: 1.7em;
         font-weight: bold;
         font-family: 'Fira Code', monospace;
-        line-height: 1em;
         overflow: hidden;
         border-right: 3px solid $highlight;
         white-space: nowrap;
         width: fit-content;
         animation:
-            typing 2s steps(20, end),
+            typing 2s steps(22, end),
             cursor 0.8s infinite;
     }
     p {

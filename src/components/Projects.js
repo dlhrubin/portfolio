@@ -8,7 +8,11 @@ export class Projects extends Component {
             return (
                 <div key={i} className="card">
                     <div className="image-container">
-                        <a href={proj.live} target="_blank" rel="noopener noreferrer"><img src={proj.screencap} alt={proj.name}/></a>
+                        <a href={proj.live} target="_blank" rel="noopener noreferrer">
+                            <div className="hover-screen">
+                                <img src={proj.screencap} alt={proj.name}/>
+                            </div>
+                        </a>
                     </div>
                     <div className="info">
                         <h2>{proj.name}</h2>

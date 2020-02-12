@@ -84,12 +84,16 @@
         .image-container {
             height: 100%;
         }
-        img {
+
+        img, .hover-screen::before {
             width: auto;
-            height: 100%;
+            height: 420px;
             border-bottom: none;
             border-right: 5px groove $light-accent;
             border-radius: 3px 30px 30px 3px;
+        }
+        .hover-screen::before {
+            width: 100%
         }
     }  
     .card {
