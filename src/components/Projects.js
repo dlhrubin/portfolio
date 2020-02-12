@@ -11,7 +11,7 @@ export class Projects extends Component {
                         <a href={proj.live} target="_blank" rel="noopener noreferrer"><img src={proj.screencap} alt={proj.name}/></a>
                     </div>
                     <div className="info">
-                        <h3>{proj.name}</h3>
+                        <h2>{proj.name}</h2>
                         <div className="details">
                             <p>{proj.summary}</p>
                             <div>
