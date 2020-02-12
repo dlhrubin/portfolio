@@ -2,9 +2,6 @@
     body {
         font-size: 0.75em;
     }
-    .navbar {
-        height: 50px;
-    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -43,14 +40,15 @@
     body {
         font-size: 0.8em;
     }
-
 }
 
 @media only screen and (min-width: 800px) { 
     body {
         font-size: 0.95em;
     }
-
+    .navbar a {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -104,5 +102,51 @@
 @media only screen and (min-width: 1277px) {
     .card {
         width: 1092px;
+    }
+}
+
+@media only screen and (min-width: 1710px) {
+    .bright-overlay {
+        transform: scaleY(0.6);
+    }
+    .white-overlay {
+        transform: scaleY(1.6);
+
+    }
+}
+
+@media only screen and (min-width: 1910px) {
+    .bright-overlay {
+        transform: scaleY(0.7);
+    }
+    .white-overlay {
+        transform: scaleY(1.75);
+
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    svg {
+        width: 2500px;
+    }
+    .bright-overlay {
+        transform: scaleY(0.5);
+    }
+    .white-overlay {
+        transform: scaleY(1.4);
+
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    svg {
+        width: 3000px;
+    }
+    .bright-overlay {
+        transform: scaleY(0.4);
+    }
+    .white-overlay {
+        transform: scaleY(1.2);
+
     }
 }
