@@ -6,7 +6,7 @@
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 11.5px;
-    span {
+    > span {
         color: $base;
         padding: 0 20px;
         font-size: 0.8em;
@@ -14,16 +14,34 @@
     }
     a {
         position: relative;
-        font-size: 2em;
         color: $base;
         padding: 0 5vw;
-        i {
+        display: flex;
+        justify-content: center;
+        i, span {
             position: absolute;
             bottom: 0;
+            text-align: center;
+            width: 100%;
+            transition: .2s;
+
+        }
+        i {
+            font-size: 2em;
+        }
+        span {
+            opacity: 0;
         }
     }
     a:hover {
         color: $highlight;
+        i {
+            bottom: 11px;
+        }
+        span {
+            opacity: 1;
+            bottom: -11px;
+        }
     }
 }
 

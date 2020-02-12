@@ -13,12 +13,15 @@ export class Contact extends Component {
                 <div className="contact-links">
                     <a href="https://github.com/dlhrubin" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>
+                        <span>GitHub</span>
                     </a>
                     <a href="https://www.linkedin.com/in/dlhrubin/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
                     </a>
                     <a href="mailto:dlhrubin@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i className="far fa-envelope"></i>
+                        <span>Email</span>
                     </a>
                 </div>
             </footer>
