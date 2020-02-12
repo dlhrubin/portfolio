@@ -1,5 +1,5 @@
 .navbar {
-    background-color: $dark-accent;
+    background-color: white;
     position: fixed;
     margin: auto;
     top: -5px;
@@ -9,14 +9,14 @@
     height: 65px;
     padding: 5px 0px 0px 0px;
     border-radius: 5px;
-    box-shadow: 6px 6px $highlight;
-    display: flex;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
     a {
-        font-size: 4em;
+        font-size: 1.2em;
+        font-weight: bold;
         color: $light-accent;
         height: auto;
         display: flex;
@@ -39,8 +39,4 @@
         list-style-type: none;
         width: 4.5em;
     }
-}
-
-.active {
-    border-bottom: 4px solid $base;
 }

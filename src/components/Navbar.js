@@ -8,17 +8,17 @@ export class Navbar extends Component {
                 <ul>
                     <li>
                         <Link activeClass="active" to="landing" spy={true} smooth={true}>
-                            <i className="fas fa-user-circle"></i>
+                            About
                         </Link>
                     </li>
                     <li>
                         <Link activeClass="active" to="projects" spy={true} smooth={true}>
-                            <i className="fas fa-code"></i>
+                            Projects
                         </Link>
                     </li>
                     <li>
                         <Link activeClass="active" to="contact" spy={true} smooth={true}>
-                            <i className="far fa-envelope"></i>
+                            Contact
                         </Link>
                     </li>
                 </ul>

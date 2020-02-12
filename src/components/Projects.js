@@ -33,7 +33,6 @@ export class Projects extends Component {
         })
         return(
             <section id="projects">
-                <h2>Projects</h2>
                 <div>
                     {projectCards}
                 </div>
