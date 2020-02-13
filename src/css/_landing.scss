@@ -1,5 +1,6 @@
 #landing {
     width: 100%;
+    min-height: 500px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -67,6 +68,7 @@
 }
 
 .fa-angle-double-down {
+    visibility: hidden;
     position: absolute;
     bottom: 20px;
     font-size: 3em;
