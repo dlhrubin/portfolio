@@ -1,38 +1,65 @@
 #landing {
     width: 100%;
+    min-height: 500px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../img/marble.jpg") no-repeat center center fixed;
-    background-size: cover;
 }    
 
 .intro {
+    position: absolute;
+    top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $base;
     border-radius: 5px;
     padding: 20px;
-    border: 2px solid $dark-accent;
-    box-shadow: 6px 6px $highlight;
     box-sizing: border-box;
     width: 80vw;
-    p {
-        color: $light-accent;
-        font-size: 3em;
-        font-weight: bold;
-        margin: 0;
-        text-align: center;
-    }
     div {
-        color: $dark-accent;
-        font-size: 1.3em;
+        width: fit-content;
+    }
+    h1 {
+        color: $light-accent;
+        font-size: 1.7em;
         font-weight: bold;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        font-family: 'Fira Code', monospace;
+        overflow: hidden;
+        border-right: 3px solid $highlight;
+        white-space: nowrap;
+        width: fit-content;
+        animation:
+            typing 2s steps(22, end),
+            cursor 0.8s infinite;
+    }
+    p {
+        color: $dark-accent;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    span {
+        padding: 0;
+        color: $highlight;
+        font-weight: bold;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes cursor {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: $highlight
     }
 }
 
@@ -41,8 +68,9 @@
 }
 
 .fa-angle-double-down {
+    visibility: hidden;
     position: absolute;
     bottom: 20px;
-    font-size: 4em;
+    font-size: 3em;
     color: $light-accent;
 }

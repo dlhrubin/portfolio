@@ -8,10 +8,14 @@ export class Projects extends Component {
             return (
                 <div key={i} className="card">
                     <div className="image-container">
-                        <a href={proj.live} target="_blank" rel="noopener noreferrer"><img src={proj.screencap} alt={proj.name}/></a>
+                        <a href={proj.live} target="_blank" rel="noopener noreferrer">
+                            <div className="hover-screen">
+                                <img src={proj.screencap} alt={proj.name}/>
+                            </div>
+                        </a>
                     </div>
                     <div className="info">
-                        <h3>{proj.name}</h3>
+                        <h2>{proj.name}</h2>
                         <div className="details">
                             <p>{proj.summary}</p>
                             <div>
@@ -33,7 +37,6 @@ export class Projects extends Component {
         })
         return(
             <section id="projects">
-                <h2>Projects</h2>
                 <div>
                     {projectCards}
                 </div>
