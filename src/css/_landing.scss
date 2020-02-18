@@ -9,12 +9,11 @@
 
 .intro {
     position: absolute;
-    top: 200px;
+    top: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
-    padding: 20px;
     box-sizing: border-box;
     width: 80vw;
     div {
@@ -22,7 +21,7 @@
     }
     h1 {
         color: $light-accent;
-        font-size: 1.7em;
+        font-size: 1.4em;
         font-weight: bold;
         font-family: 'Fira Code', monospace;
         overflow: hidden;

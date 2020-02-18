@@ -4,12 +4,6 @@
     }
 }
 
-@media only screen and (min-width: 375px) {
-    body {
-        font-size: 0.75em;
-    }
-}
-
 @media only screen and (min-width: 500px) {
     .content section, footer {
         padding-right: 80px;
@@ -40,14 +34,14 @@
     .intro, .card {
         width: 70vw;
     }
+    .intro h1 {
+        font-size: 1.7em;
+    }
     #projects {
         padding-top: 0;
     }
-}
-
-@media only screen and (min-width: 735px) {
-    body {
-        font-size: 0.8em;
+    #contact a {
+        padding: 0 4vw;
     }
 }
 
@@ -56,7 +50,7 @@
         font-size: 0.95em;
     }
     .navbar a {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
 

@@ -26,8 +26,8 @@ const projects = [
         screencap: img3, 
         summary: "This vanilla JavaScript project replicates the front-end functionality of the Google Chrome extension Momentum. It includes a clock and timely greeting, the current weather given location, a customizable list of links, a Google search bar, a to do list, an inspirational quote, and a background image. The user can set a \"main focus\" for the day and customize their name.",
         stack: ["JavaScript", "HTML", "CSS"],
-        live: "https://chingu-voyages.github.io/v11-toucans-team-06/",
-        code: "https://github.com/chingu-voyages/v11-toucans-team-06"
+        live: "https://chingu-voyages.github.io/momentum-clone/",
+        code: "https://github.com/chingu-voyages/momentum-clone"
     }, 
     {
         name: "Web Template Clone", 

@@ -10,12 +10,11 @@
         color: $base;
         padding: 0 20px;
         font-size: 0.8em;
-        margin-bottom: 5px;
     }
     a {
         position: relative;
         color: $base;
-        padding: 0 5vw;
+        padding: 0 6vw;
         display: flex;
         justify-content: center;
         i, span {
@@ -53,5 +52,4 @@
     min-width: 165px;
     display: flex;
     justify-content: center;
-    margin-bottom: 5px;
 }
