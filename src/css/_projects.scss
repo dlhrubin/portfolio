@@ -105,7 +105,7 @@
         font-size: 0.9em;
         border: 1.5px solid $darker-base;
         margin: 0 8px 8px 0;
-        padding: 3px 5px;
+        padding: 0 5px;
         border-radius: 5px;
     }
 }
@@ -113,7 +113,7 @@
 .links {
     color: $dark-accent;
     display: block;
-    margin-top: 9px;
+    margin-top: 3px;
     font-size: 1em;
     a {
         color: $light-accent;

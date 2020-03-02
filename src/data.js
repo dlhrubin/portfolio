@@ -17,7 +17,7 @@ const projects = [
         name: "Album Collage", 
         screencap: img2, 
         summary: "Album Collage is a tool for generating collages of album covers. Users can select any artist and album available in the Last.fm database and drag-and-drop in the selection box to re-order album selections. Collage shapes are dynamically generated for each possible number of album covers. Collages can be edited, shuffled, reset, and deleted.", 
-        stack: ["React", "JavaScript", "HTML", "Sass", "Axios"],
+        stack: ["React", "JavaScript", "HTML", "Sass", "Axios", "ESLint", "stylelint"],
         live: "https://www.albumcollage.com",
         code: "https://github.com/dlhrubin/album-collage"                  
     },
