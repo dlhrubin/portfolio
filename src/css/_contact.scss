@@ -1,55 +1,63 @@
 #contact {
-    position: relative;
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 11.5px;
-    > span {
-        color: $base;
-        padding: 0 20px;
-        font-size: 0.8em;
-    }
-    a {
-        position: relative;
-        color: $base;
-        padding: 0 6vw;
-        display: flex;
-        justify-content: center;
-        i, span {
-            position: absolute;
-            bottom: 0;
-            text-align: center;
-            width: 100%;
-            transition: .2s;
+  position: relative;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 11.5px;
 
-        }
-        i {
-            font-size: 2em;
-        }
-        span {
-            opacity: 0;
-        }
+  > span {
+    color: $base;
+    padding: 0 20px;
+    font-size: 0.8em;
+  }
+
+  a {
+    position: relative;
+    color: $base;
+    padding: 0 6vw;
+    display: flex;
+    justify-content: center;
+
+    i,
+    span {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      transition: 0.2s;
     }
-    a:hover {
-        color: $highlight;
-        i {
-            bottom: 11px;
-        }
-        span {
-            opacity: 1;
-            bottom: -11px;
-        }
+
+    i {
+      font-size: 2em;
     }
+
+    span {
+      opacity: 0;
+    }
+  }
+
+  a:hover {
+    color: $highlight;
+
+    i {
+      bottom: 11px;
+    }
+
+    span {
+      opacity: 1;
+      bottom: -11px;
+    }
+  }
 }
 
 .fa-heart {
-    color: red;
+  color: red;
 }
 
 .contact-links {
-    min-width: 165px;
-    display: flex;
-    justify-content: center;
+  min-width: 165px;
+  display: flex;
+  justify-content: center;
 }

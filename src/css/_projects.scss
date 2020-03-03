@@ -1,147 +1,157 @@
 #projects {
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .image-container {
     width: 100%;
-    padding-top: 45px;
-    padding-bottom: 25px;
+    position: relative;
+  }
+
+  img,
+  .hover-screen::before {
+    height: auto;
+    width: 100%;
+    border-bottom: 5px groove $light-accent;
+    border-radius: 3px 3px 30px 30px;
+  }
+
+  .hover-screen::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "View live";
+    font-size: 1.7em;
+    font-weight: bold;
+    text-shadow: 0 0 10px $dark-accent;
+    color: $base;
+    opacity: 0;
+    height: 98.5%;
+    position: absolute;
     box-sizing: border-box;
+    transition: 0.1s;
+  }
+
+  a:hover .hover-screen::before {
+    background-color: rgba(61, 14, 30, 0.5);
+    opacity: 1;
+  }
+
+  .info {
+    background-color: $base;
+    flex: 1 1 auto;
+    margin: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    > div {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  }
 
-    .image-container {
-        width: 100%;
-        position: relative;
-    }
-    img, .hover-screen:before {
-        height: auto;
-        width: 100%;
-        border-bottom: 5px groove $light-accent;
-        border-radius: 3px 3px 30px 30px;
-    }
+  h2 {
+    color: $light-accent;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    padding: 10px 0 5px 0;
+    border-bottom: 5px dashed $darker-base;
+    width: 78%;
+  }
 
-    .hover-screen::before {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content: "View live";
-        font-size: 1.7em;
-        font-weight: bold;
-        text-shadow: 0 0 10px $dark-accent;
-        color: $base;
-        opacity: 0;
-        height: 98.5%;
-        position: absolute;
-        box-sizing: border-box;
-        transition: 0.1s;
-    }
+  p {
+    margin: 10px 0;
+  }
 
-    a:hover .hover-screen::before {
-        background-color: rgba(61, 14, 30, 0.5);
-        opacity: 1;
-    }
-
-    .info {
-        background-color: $base;
-        flex: 1 1 auto;
-        margin: 10px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    h2 {
-        color: $light-accent;
-        text-align: center;
-        font-size: 1.4em;
-        border-radius: 5px 5px 0px 0px;
-        margin: 0px;
-        padding: 10px 0px 5px 0px;
-        border-bottom: 5px dashed $darker-base;
-        width: 78%;    
-    }
-    p {
-        margin: 10px 0;
-    }
-    p, .stack {
-        color: $dark-accent;
-    }
-    span {
-        font-weight: bold;
-    }
+  p,
+  .stack {
+    color: $dark-accent;
+  }
 }
 
 .details {
-    padding: 0px 20px 20px 20px;
-    line-height: 1.8em;
-    font-size: 1em;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  line-height: 1.8em;
+  font-size: 1em;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card {
-    width: 90vw;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 25px 10px;
-    box-shadow: 0 0 5px grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+  width: 90vw;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 25px 10px;
+  box-shadow: 0 0 5px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 .tech {
-    display: flex;
-    flex-wrap: wrap;
-    span {
-        color: $light-accent;
-        font-size: 0.9em;
-        border: 1.5px solid $darker-base;
-        margin: 0 8px 8px 0;
-        padding: 0 5px;
-        border-radius: 5px;
-    }
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    color: $light-accent;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 1.5px solid $darker-base;
+    margin: 0 8px 8px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
 }
 
 .links {
-    color: $dark-accent;
-    display: block;
-    margin-top: 3px;
-    font-size: 1em;
-    a {
-        color: $light-accent;
-        padding: 5px 14px;
-        border-radius: 5px;
-        font-weight: bold;
-        color: $base;
-    }
-    a:hover {
-        background-color: $highlight;
-    }
+  color: $dark-accent;
+  display: block;
+  margin-top: 3px;
+  font-size: 1em;
 
-    .live-link {
-        background-color: $tertiary;
-        i {
-            margin-left: 8px;
-        }
+  a {
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: $base;
+  }
+
+  a:hover {
+    background-color: $highlight;
+  }
+
+  .live-link {
+    background-color: $tertiary;
+
+    i {
+      margin-left: 8px;
     }
-    .code-link {
-        background-color: $darker-base;
-        color: $tertiary;
-        margin-left: 10px;
-        i {
-            margin-left: 5px;
-        }
+  }
+
+  .code-link {
+    background-color: $darker-base;
+    color: $tertiary;
+    margin-left: 8px;
+
+    i {
+      margin-left: 5px;
     }
-    .code-link:hover {
-        color: $base;
-    }
+  }
+
+  .code-link:hover {
+    color: $base;
+  }
 }
-
